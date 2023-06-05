@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    background-color:#FEF9E7 
+}
+
+
+section {
+    margin: top 4px;
+    width: 100%;
+    height: 10vh;
+}
+section li.active a {
+    color: #fac031;
+    font-weight: bold;
+  }
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+section nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after{
+    width: 100%;
+}
+
+section nav ul li a:hover{
+    color: #fac031;
+}
+
+section nav .icon i{
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section nav .icon i:hover{
+    color: #fac031;
+}
+section .home + section .menu{
+    margin-top: 0px;
+}
+.titre{
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.menu .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.menu .contenu .box{
+    cursor: pointer;
+    width: 450px;
+    margin: 20px;
+    border: 20px solid #fff;
+    box-shadow: 20px 15px 35px rgba(0,0,0, 0.8);
+}
+.menu .contenu .box:hover{
+    background-color:#fac031 ;
+}
+
+.menu .contenu .box .imbox{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.menu .contenu .box .imbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.menu .contenu .box .text{
+    text-align: left;
+    font-weight: 100px;
+    color: #111;
+}
+p{
+    margin-left: 180px;
+}
+
+p1  {
+   
+    font-size: 24px;
+    color: #FFD700;
+  }
+  
+  p1 span {
+    font-size: 36px;
+    color: #FFD700;
+  }
+  section .product-summary{
+    background: #fac031;
+  justify-content: center;
+   display: flex;
+    bottom: 30px;
+    width: 220px;
+  align-items: center;
+    padding: 12px 25px;
+}
+section .product-summary a{
+    color: #fff;
+    margin-right: 5px;
+    text-decoration: none;
+}
+section .product-summary i{
+    color: #fff;
+    transition: 0.3s;
+}
+#searchInput {
+    margin-left: 550px;
+    margin-top: 40px;
+    background-color: #FEF9E7;
+    color: #000;
+    border: 2px solid #fac031;
+    border-radius: 5px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 450px;
+    font-size: 14px;
+    right: 200px;
+    text-align: center;
+cursor: pointer;
+  
+}.custom-button {
+    background-color:#fac031 ;
+    
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+.titre-texte span2{
+    margin-left: 15px;
+    color: #fac031;
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 70px;
+}
+.titre-texte span1{
+    margin-left: 15px;
+    color: black;
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 70px;
+}
+.titre-texte{
+    line-height: 22px;
+    font-size: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    margin-top: 2600px;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+

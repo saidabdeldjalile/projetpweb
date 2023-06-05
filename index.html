@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1">
+  <title>Recette website</title>
+
+<link rel="stylesheet" href="stylerecette.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section id="home">
+        <nav>
+            <div class="logo">
+                <img src="assets/recettes/logo.png">
+            </div>
+        
+         <ul>       
+            <li class="active"> <a href="#home"> Acceuil</a> </li>
+            <li> <a href="catalogue.html">Catalogue </a> </li>
+            <li> <a href="#detaille">Details</a> </li>
+      
+           
+         </ul>
+         <div class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-heart"></i>
+        </div></nav>
+        <div class="main">
+            <div class="men_text">
+               <h1>Bienvenue a notre cuisine<br><span>Food</span></h1><br>
+               
+             </div>
+            
+                <div class="men_image">
+                    <img src="assets/recettes/main4.jpg" alt="Image 1" width="600px">
+                    <img src="assets/recettes/main2.jpg" alt="Image 2"width="600px">
+                    <img src="assets/recettes/main6.jpg" alt="Image 3"width="600px">
+                  
+                  
+                  
+                  <script>
+                    var slideIndex = 0;
+                    showSlides();
+                  
+                    function showSlides() {
+                      var i;
+                      var slides = document.getElementsByClassName("men_image")[0].getElementsByTagName("img");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {
+                        slideIndex = 1;
+                      }
+                      slides[slideIndex - 1].style.display = "block";
+                      setTimeout(showSlides, 3000); // Change image every 3 seconds
+                    }
+                  </script>
+              </div>
+            </div>
+    
+        <p>
+          Là où vous allez trouver plusieurs recettes à essayer ensemble ,<br>
+           on vas faire le tour du monde ,<br>
+            parce que (food) vous suggère des recettes all over the World <br>
+          Vous allez trouver toutes les étapes de préparation de vos plats <br>
+          + les ingrédients+ les techniques pour bien réussir le plat . <br>
+          Nous allons vous accompagner étape par étape . <br>
+          N hésitez pas à essayer nos recettes , <br>
+           vous allez pas regretter !  <br>
+        
+        </p>
+
+        <div class="main_btn">
+            <a href="catalogue.html" target="_blank">Passer au Catalogue</a>
+            <i class="fa-solid fa-angle-right"></i>
+        </div><br><br><br><br><br>
+
+<div id="category"><h1>Voici notre category</h1></div>
+<div class="contenu">
+<div class="box">
+  <div class="imbox">
+      <img src="assets/recettes/food.png" alt="">
+  </div>
+  <div class="text">
+      <h3>Diner</h3>
+  </div>
+
+</div><br><br>
+
+<div class="box">
+  <div class="imbox">
+      <img src="assets/recettes/main-dish.png" alt="">
+  </div>
+  <div class="text">
+      <h3>Plat Principale</h3>
+    
+  </div>
+ 
+</div>
+<div class="box">
+  <div class="imbox">
+      <img src="assets/recettes/croissant.png" alt="">
+  </div>
+  <div class="text">
+      <h3>Petit Dejeuner</h3>
+      
+  </div>
+  
+</div>
+<div class="box">
+  <div class="imbox">
+      <img src="assets/recettes/english-breakfast.png" alt="">
+  </div>
+  <div class="text">
+      <h3>Dejeuner</h3>
+   
+  </div>
+  
+</div></div>
+    </section>
+  
+    <footer>
+      <div class="social-media">
+        <i  class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Food. Tous Droits Reservee
+        </p>
+      </div>
+      <div class="logo">
+        <img src="assets/recettes/logo.png" width="50px"alt="My Recipe Website"></a>
+      
+      </div>
+      </div>
+    </footer>
+  
+</body>
+<script src="recettesDB.js"></script>
+</html>
